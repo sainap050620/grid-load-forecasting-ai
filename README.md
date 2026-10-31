@@ -1,4 +1,5 @@
 # ⚡ German Power Grid Load Forecasting API
+![CI Pipeline](https://github.com/sainap050620/grid-load-forecasting-ai/actions/workflows/ci.yml/badge.svg)
 
 An end-to-end containerized microservice that forecasts electricity grid demand (MW) to assist German Transmission System Operators (TSOs) with reserve balancing.
 
