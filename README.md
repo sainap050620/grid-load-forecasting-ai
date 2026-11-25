@@ -1,6 +1,9 @@
 # ⚡ German Power Grid Load Forecasting API
 ![CI Pipeline](https://github.com/sainap050620/grid-load-forecasting-ai/actions/workflows/ci.yml/badge.svg)
 
+**Live demo:** [https://grid-load-forecasting-ai.onrender.com/docs](https://grid-load-forecasting-ai.onrender.com/docs) (interactive API docs). It runs on a free instance, so the first request after idle can take up to a minute.
+
+
 A containerised microservice that forecasts electricity grid demand (MW) from temperature and calendar features, the kind of short-term load estimate transmission system operators use for reserve balancing.
 
 > The model is trained on **synthetic** data that mimics German load patterns (daily cycle, weekend dip, temperature and holiday effects). The focus of this project is the **production setup** around the model: validation, testing, CI and containerisation.
@@ -66,7 +69,7 @@ curl -X POST http://localhost:8000/predict \
 {"predicted_load_mw": 40094.9, "model_version": "random-forest-v1"}
 ```
 
-Interactive API docs are available at `http://localhost:8000/docs`.
+Interactive API docs are available at `http://localhost:8000/docs`, or on the live service at https://grid-load-forecasting-ai.onrender.com/docs.
 
 ## 🛠️ Tech Stack
 
